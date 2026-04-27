@@ -9,7 +9,7 @@
     font-thicken = true
     font-family = MonaspiceNe Nerd Font Mono
     font-family = JetBrainsMono Nerd Font Mono
-    font-size = 22
+    font-size = 15
     font-feature = ss01
     font-feature = ss02
     font-feature = ss03
@@ -44,7 +44,7 @@
     escapeTime = 0;
     keyMode = "vi";
     mouse = true;
-    prefix = "C-Space";
+    prefix = "C-a";
 
     plugins = with pkgs.tmuxPlugins; [
       sensible

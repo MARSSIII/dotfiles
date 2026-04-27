@@ -1,0 +1,45 @@
+[
+  {
+    "command": "lazygit",
+    "hide": "on_success",
+    "label": "lazygit",
+    "reveal": "always",
+    "reveal_target": "center",
+    "use_new_terminal": true
+  },
+  {
+    "command": "lazydocker",
+    "hide": "on_success",
+    "label": "lazydocker",
+    "reveal": "always",
+    "reveal_target": "center",
+    "use_new_terminal": true
+  },
+  {
+    "allow_concurrent_runs": false,
+    "command": "claude",
+    "hide": "on_success",
+    "label": "Claude Code",
+    "reveal": "always",
+    "reveal_target": "center",
+    "use_new_terminal": true
+  },
+  {
+    "allow_concurrent_runs": false,
+    "command": "codex",
+    "hide": "on_success",
+    "label": "Codex",
+    "reveal": "always",
+    "reveal_target": "center",
+    "use_new_terminal": true
+  },
+  {
+    "allow_concurrent_runs": false,
+    "command": "yazi $ZED_WORKTREE_ROOT --chooser-file /tmp/zed-yazi-choice && [ -s /tmp/zed-yazi-choice ] && xargs zeditor -a < /tmp/zed-yazi-choice; rm -f /tmp/zed-yazi-choice",
+    "hide": "on_success",
+    "label": "Yazi (open file)",
+    "reveal": "always",
+    "reveal_target": "center",
+    "use_new_terminal": true
+  }
+]

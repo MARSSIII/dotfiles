@@ -2,6 +2,7 @@
   pkgs,
   lib,
   config,
+  hostname,
   ...
 }:
 
@@ -176,13 +177,14 @@
           }
 
           function rebuild() {
-            sudo darwin-rebuild switch --flake ~/.dotfiles "$@"
+            sudo darwin-rebuild switch --flake ~/.dotfiles#${hostname} "$@"
           }
 
           function update() {
             nix flake update --flake ~/.dotfiles && rebuild
           }
 
+          export PATH="$HOME/.local/bin:$PATH"
           export PATH="/usr/local/texlive/2026/bin/universal-darwin:$PATH"
 
           eval "$(mise activate zsh)"

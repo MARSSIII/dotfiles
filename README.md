@@ -13,11 +13,8 @@ Declarative, reproducible setup managed entirely through Nix flakes. Includes sy
 ```bash
 git clone git@github.com:IvanovSvyatoslav/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-darwin-rebuild switch --flake .
+darwin-rebuild switch --flake .#marssiii-mac
 ```
-
-> **Note:** This config references a private `dotfiles-private` flake input.
-> Fork this repo and remove it from `flake.nix` or replace with your own secrets management.
 
 ## What's Inside
 
@@ -161,7 +158,7 @@ darwin-rebuild switch --flake .
 
 **Design:** Figma
 
-**Security:** 1Password (+ CLI + shell plugins), AmneziaVPN, Pritunl
+**Security:** 1Password, AmneziaVPN, Pritunl
 
 **Gaming:** Steam, Moonlight
 
@@ -190,7 +187,7 @@ mise run lint         # Run all checks
 
 Apply changes:
 ```bash
-darwin-rebuild switch --flake .
+darwin-rebuild switch --flake .#marssiii-mac
 # or shell alias:
 rebuild
 ```

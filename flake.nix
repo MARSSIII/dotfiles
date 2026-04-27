@@ -1,5 +1,5 @@
 {
-  description = "svyat's nix configuration";
+  description = "marssiii's nix configuration";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -23,19 +23,13 @@
 
     catppuccin.url = "github:catppuccin/nix";
 
-    dotfiles-private = {
-      url = "git+ssh://git@github.com/IvanovSvyatoslav/dotfiles-private";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    _1password-shell-plugins.url = "github:1Password/shell-plugins";
   };
 
-  outputs = inputs@{ nix-darwin, home-manager, nix-homebrew, stylix, catppuccin, dotfiles-private, ... }:
+  outputs = inputs@{ nix-darwin, home-manager, nix-homebrew, stylix, catppuccin, ... }:
     let
       system = "aarch64-darwin";
-      hostname = "svyat-mac";
-      username = "ivsv";
+      hostname = "marssiii-mac";
+      username = "marssiii";
     in
     {
       darwinConfigurations.${hostname} = nix-darwin.lib.darwinSystem {
@@ -44,7 +38,6 @@
         modules = [
           ./modules/darwin.nix
           stylix.darwinModules.stylix
-          dotfiles-private.darwinModules.default
 
           nix-homebrew.darwinModules.nix-homebrew
           {
@@ -62,12 +55,10 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               backupFileExtension = "backup";
-              extraSpecialArgs = { inherit inputs username system; };
+              extraSpecialArgs = { inherit inputs username system hostname; };
               sharedModules = [
                 stylix.homeModules.stylix
                 catppuccin.homeModules.catppuccin
-                dotfiles-private.homeModules.default
-                inputs._1password-shell-plugins.hmModules.default
               ];
               users.${username} = import ./modules/home.nix;
             };

@@ -6,11 +6,6 @@
       enable = true;
       lfs.enable = true;
 
-      signing = {
-        key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF/WOifKMBKVekeC55DS/EHPM5yDxnoqQ0KlcZyBvVNU";
-        signByDefault = true;
-      };
-
       ignores = [
         ".DS_Store"
         "*.swp"
@@ -27,12 +22,8 @@
 
       settings = {
         user = {
-          name = "Svyatoslav Ivanov";
-          email = "si.ivanov1212@gmail.com";
-        };
-        gpg = {
-          format = "ssh";
-          ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+          name = "MARSSIII";
+          email = "Sashashabalin199@gmail.com";
         };
         init.defaultBranch = "main";
         pull.rebase = true;

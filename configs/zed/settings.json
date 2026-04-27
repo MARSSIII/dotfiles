@@ -1,0 +1,261 @@
+{
+  "agent": {
+    "default_model": {
+      "model": "gpt-5.3-codex",
+      "provider": "copilot_chat"
+    },
+    "inline_assistant_model": {
+      "model": "gpt-5.3-codex",
+      "provider": "copilot_chat"
+    },
+    "model_parameters": []
+  },
+  "agent_buffer_font_size": 16,
+  "agent_ui_font_size": 18,
+  "auto_install_extensions": {
+    "biome": true,
+    "catppuccin": true,
+    "csv": true,
+    "docker-compose": true,
+    "dockerfile": true,
+    "git-firefly": true,
+    "html": true,
+    "material-icon-theme": true,
+    "nix": true,
+    "sql": true,
+    "toml": true
+  },
+  "autosave": "on_focus_change",
+  "buffer_font_fallbacks": [
+    "JetBrainsMono Nerd Font Mono"
+  ],
+  "buffer_font_family": "MonaspiceNe Nerd Font Mono",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true
+  },
+  "buffer_font_size": 16,
+  "centered_layout": {
+    "left_padding": 0.2,
+    "right_padding": 0.2
+  },
+  "collaboration_panel": {
+    "button": true,
+    "dock": "left"
+  },
+  "confirm_quit": false,
+  "debugger": {
+    "button": false
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/out",
+    "**/dist",
+    "**/.husky",
+    "**/.turbo",
+    "**/.vscode-test",
+    "**/.vscode",
+    "**/bin",
+    "**/obj",
+    "**/.next",
+    "**/.storybook",
+    "**/.tap",
+    "**/.nyc_output",
+    "**/report",
+    "**/node_modules",
+    "**/.dotnet"
+  ],
+  "git_panel": {
+    "dock": "left"
+  },
+  "icon_theme": "Material Icon Theme",
+  "indent_guides": {
+    "coloring": "indent_aware",
+    "enabled": true
+  },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "languages": {
+    "CSS": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "JSON": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "JSONC": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "JSX": {
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      },
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      },
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "Python": {
+      "language_servers": [
+        "ty",
+        "!basedpyright",
+        "..."
+      ]
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      },
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      },
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    }
+  },
+  "lsp": {
+    "biome": {
+      "settings": {
+        "require_config_file": true
+      }
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "EDITOR": "zed --wait",
+        "classAttributes": [
+          "class",
+          "className",
+          "ngClass",
+          "styles"
+        ]
+      }
+    }
+  },
+  "notification_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "preview_tabs": {
+    "enable_preview_from_file_finder": false
+  },
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "entry_spacing": "comfortable",
+    "git_status": true,
+    "hide_hidden": false,
+    "hide_root": true
+  },
+  "relative_line_numbers": "enabled",
+  "scrollbar": {
+    "show": "auto"
+  },
+  "search": {
+    "button": true
+  },
+  "status_bar": {
+    "active_language_button": true,
+    "cursor_position_button": false
+  },
+  "tab_bar": {
+    "show": true
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "all"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": false
+    }
+  },
+  "theme": {
+    "dark": "Gruvbox Dark",
+    "light": "Gruvbox Light",
+    "mode": "dark"
+  },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_branch_name": true,
+    "show_menus": false,
+    "show_onboarding_banner": true,
+    "show_project_items": true,
+    "show_user_menu": true,
+    "show_user_picture": true
+  },
+  "ui_font_size": 18,
+  "use_system_prompts": false,
+  "vim": {
+    "use_smartcase_find": true,
+    "use_system_clipboard": "on_yank"
+  },
+  "vim_mode": true,
+  "which_key": {
+    "enabled": true
+  }
+}

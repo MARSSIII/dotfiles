@@ -7,7 +7,7 @@
 
 {
   networking = {
-    computerName = "Святослав MacBook Pro";
+    computerName = hostname;
     hostName = hostname;
     localHostName = hostname;
   };
@@ -85,10 +85,11 @@
       "mas"
       "powerlevel10k"
       "gemini-cli"
-      "FelixKratz/formulae/borders"
+      "felixkratz/formulae/borders"
     ];
 
     taps = [
+      "felixkratz/formulae"
       "nikitabobko/tap"
     ];
 
@@ -109,7 +110,6 @@
       "google-chrome"
       "iina"
       "jetbrains-toolbox"
-      "jordanbaird-ice"
       "linear-linear"
       "mac-mouse-fix"
       "mattermost"
@@ -118,7 +118,6 @@
       "obsidian"
       "ollama-app"
       "orbstack"
-      "parallels"
       "pritunl"
       "qbittorrent"
       "qobuz"
@@ -146,7 +145,6 @@
     ];
 
     masApps = {
-      "1Password for Safari" = 1569813296;
       "Keynote" = 409183694;
       "Numbers" = 409203825;
       "Pages" = 409201541;

@@ -20,8 +20,11 @@
     sessionVariables = {
       EDITOR = "nvim";
       VISUAL = "nvim";
-      SSH_AUTH_SOCK = "$HOME/.1password/agent.sock";
     };
+
+    sessionPath = [
+      "$HOME/.local/bin"
+    ];
 
     file = {
       ".ansible.cfg".text = ''
@@ -45,12 +48,6 @@
   xdg.enable = true;
   programs.home-manager.enable = true;
 
-  programs._1password-shell-plugins = {
-    enable = true;
-    plugins = [
-    ];
-  };
-
   catppuccin = {
     enable = true;
     flavor = "mocha";
@@ -73,7 +70,7 @@
     gtk.icon.enable = false;
     cursors.enable = false;
     zed = {
-      enable = true;
+      enable = false;
       icons.enable = false;
     };
   };

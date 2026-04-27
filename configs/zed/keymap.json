@@ -1,0 +1,264 @@
+[
+  {
+    "bindings": {
+      "cmd-b": "workspace::ToggleLeftDock",
+      "ctrl-/": "workspace::ToggleBottomDock",
+      "ctrl-\\": "terminal_panel::ToggleFocus"
+    },
+    "context": "Workspace"
+  },
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    },
+    "context": "Dock || Terminal || Editor"
+  },
+  {
+    "bindings": {
+      "g f": "editor::OpenExcerpts",
+      "space a a": "agent::ToggleFocus",
+      "space a e": "assistant::InlineAssist",
+      "space a h": "agent::OpenHistory",
+      "space a n": "agent::NewThread",
+      "space a s": "agent::AddSelectionToThread",
+      "space a t": "workspace::ToggleRightDock",
+      "space f n": "workspace::NewFile",
+      "space f p": "projects::OpenRecent",
+      "space g h d": "editor::ExpandAllDiffHunks",
+      "space g h r": "git::Restore",
+      "space g s": "git_panel::ToggleFocus",
+      "space m P": "markdown::OpenPreviewToTheSide",
+      "space m p": "markdown::OpenPreview",
+      "space s S": "project_symbols::Toggle",
+      "space s W": "pane::DeploySearch",
+      "space s b": "vim::Search",
+      "space s d": "diagnostics::Deploy",
+      "space s g": "workspace::NewSearch",
+      "space s s": "outline::Toggle",
+      "space s w": "buffer_search::Deploy",
+      "space u i": "editor::ToggleInlayHints",
+      "space u w": "editor::ToggleSoftWrap",
+      "space u z": "workspace::ToggleCenteredLayout",
+      "space z": "workspace::ToggleZoom"
+    },
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu"
+  },
+  {
+    "bindings": {
+      "[ b": "pane::ActivatePreviousItem",
+      "[ d": "editor::GoToPreviousDiagnostic",
+      "[ h": "editor::GoToPreviousHunk",
+      "[ q": "editor::MoveToStartOfExcerpt",
+      "] b": "pane::ActivateNextItem",
+      "] d": "editor::GoToDiagnostic",
+      "] h": "editor::GoToHunk",
+      "] q": "editor::MoveToStartOfNextExcerpt",
+      "ctrl-s": "workspace::Save",
+      "g D": "editor::GoToDefinitionSplit",
+      "g I": "editor::GoToImplementationSplit",
+      "g T": "editor::GoToTypeDefinitionSplit",
+      "g d": "editor::GoToDefinition",
+      "g i": "editor::GoToImplementation",
+      "g r": "editor::FindAllReferences",
+      "g t": "editor::GoToTypeDefinition",
+      "g y": "editor::GoToTypeDefinition",
+      "shift-q": "pane::CloseActiveItem",
+      "space ,": "tab_switcher::Toggle",
+      "space -": "pane::SplitDown",
+      "space .": "editor::ToggleCodeActions",
+      "space /": "workspace::NewSearch",
+      "space 0": "pane::ActivateLastItem",
+      "space 1": ["pane::ActivateItem", 0],
+      "space 2": ["pane::ActivateItem", 1],
+      "space 3": ["pane::ActivateItem", 2],
+      "space 4": ["pane::ActivateItem", 3],
+      "space 5": ["pane::ActivateItem", 4],
+      "space 6": ["pane::ActivateItem", 5],
+      "space 7": ["pane::ActivateItem", 6],
+      "space 8": ["pane::ActivateItem", 7],
+      "space 9": ["pane::ActivateItem", 8],
+      "space a c": [
+        "task::Spawn",
+        { "task_name": "Claude Code" }
+      ],
+      "space a x": [
+        "task::Spawn",
+        { "task_name": "Codex" }
+      ],
+      "space b b": "pane::AlternateFile",
+      "space b d": "pane::CloseActiveItem",
+      "space b n": "workspace::NewFile",
+      "space b o": "pane::CloseOtherItems",
+      "space c a": "editor::ToggleCodeActions",
+      "space c f": "editor::Format",
+      "space c r": "editor::Rename",
+      "space d d": [
+        "task::Spawn",
+        { "reveal_target": "center", "task_name": "lazydocker" }
+      ],
+      "space e": "workspace::ToggleLeftDock",
+      "space f E": "pane::RevealInProjectPanel",
+      "space g D": "editor::ExpandAllDiffHunks",
+      "space g b": "git::Blame",
+      "space g d": "git::Diff",
+      "space g g": [
+        "task::Spawn",
+        { "reveal_target": "center", "task_name": "lazygit" }
+      ],
+      "space q q": "zed::Quit",
+      "space r b": [
+        "task::Spawn",
+        { "task_name": "Build" }
+      ],
+      "space r f": [
+        "task::Spawn",
+        { "task_name": "Format" }
+      ],
+      "space r r": [
+        "task::Spawn",
+        { "task_name": "Start" }
+      ],
+      "space r t": "task::Spawn",
+      "space space": "file_finder::Toggle",
+      "space t a": [
+        "task::Spawn",
+        { "task_name": "Test: All" }
+      ],
+      "space t u": [
+        "task::Spawn",
+        { "task_name": "Test: Unit" }
+      ],
+      "space w d": "pane::CloseAllItems",
+      "space x x": "diagnostics::Deploy",
+      "space |": "pane::SplitRight"
+    },
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu"
+  },
+  {
+    "bindings": {
+      "g c": "editor::ToggleComments",
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    },
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu"
+  },
+  {
+    "bindings": {
+      "a": "editor::ToggleCodeActions",
+      "c": "vim::CurrentLine",
+      "r": "editor::Rename"
+    },
+    "context": "Editor && vim_operator == c"
+  },
+  {
+    "bindings": {
+      "o": "editor::ExpandAllDiffHunks",
+      "r": "git::Restore"
+    },
+    "context": "vim_operator == d"
+  },
+  {
+    "bindings": {
+      "b": "vim::AnyBrackets"
+    },
+    "context": "vim_operator == a || vim_operator == i || vim_operator == cs"
+  },
+  {
+    "bindings": {
+      "S": "vim::PushSneakBackward",
+      "s": "vim::PushSneak"
+    },
+    "context": "vim_mode == normal || vim_mode == visual"
+  },
+  {
+    "bindings": {
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
+      "n": ["workspace::SendKeystrokes", "n z z z v"],
+      "shift-g": ["workspace::SendKeystrokes", "shift-g z z"],
+      "shift-n": ["workspace::SendKeystrokes", "shift-n z z z v"]
+    },
+    "context": "VimControl && !menu"
+  },
+  {
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+      "space f n": "workspace::NewFile",
+      "space f p": "projects::OpenRecent",
+      "space q q": "zed::Quit",
+      "space r t": [
+        "editor::SpawnNearestTask",
+        { "reveal": "no_focus" }
+      ],
+      "space s g": "workspace::NewSearch",
+      "space space": "file_finder::Toggle"
+    },
+    "context": "EmptyPane || SharedScreen"
+  },
+  {
+    "bindings": {
+      "-": "project_panel::SelectParent",
+      "/": "project_panel::NewSearchInDirectory",
+      ":": "command_palette::Toggle",
+      "A": "project_panel::NewDirectory",
+      "a": "project_panel::NewFile",
+      "c": "project_panel::Copy",
+      "ctrl-6": "pane::AlternateFile",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "d": "project_panel::Delete",
+      "enter": "project_panel::OpenPermanent",
+      "escape": "project_panel::ToggleFocus",
+      "g g": "menu::SelectFirst",
+      "h": "project_panel::CollapseSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrevious",
+      "l": "project_panel::ExpandSelectedEntry",
+      "o": "project_panel::OpenPermanent",
+      "p": "project_panel::Paste",
+      "q": "workspace::ToggleLeftDock",
+      "r": "project_panel::Rename",
+      "shift-g": "menu::SelectLast",
+      "space e": "workspace::ToggleLeftDock",
+      "t": "project_panel::OpenPermanent",
+      "v": "project_panel::OpenPermanent",
+      "x": "project_panel::Cut"
+    },
+    "context": "ProjectPanel && not_editing"
+  },
+  {
+    "bindings": {
+      "q": "git_panel::Close"
+    },
+    "context": "GitPanel"
+  },
+  {
+    "bindings": {
+      "q": "workspace::ToggleRightDock"
+    },
+    "context": "AssistantPanel && vim_mode == normal"
+  },
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    },
+    "context": "Terminal"
+  },
+  {
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w l": "workspace::ActivatePaneRight"
+    },
+    "context": "Dock"
+  }
+]
